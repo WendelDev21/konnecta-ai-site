@@ -46,63 +46,43 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Sistema de Automação Industrial",
-    description: "Desenvolvimento de sistema completo de automação para indústria metalúrgica, integrando sensores IoT, análise preditiva com IA e dashboard de monitoramento em tempo real.",
-    category: "Automação",
+    title: "Sistema de Gestão de Barbearia",
+    description: "Desenvolvimento de sistema completo de gestão de barbearia, gestão de clientes, funcionários, financeiro, dashboard de monitoramento em tempo real.",
+    category: "Desenvolvimento",
     icon: Bot,
-    technologies: ["Python", "TensorFlow", "React", "Node.js", "MQTT", "PostgreSQL"],
-    results: ["40% redução de downtime", "25% economia de energia", "ROI em 8 meses"],
+    technologies: ["Next.js", "React", "TypeScript", "PostgreSQL"],
+    results: ["Aumento de faturamento: 10% a 35%", "Redução de faltas/no-show: 30% a 70%", "Aumento de agendamentos recorrentes: 20% a 50%", "Aumento de agendamentos recorrentes: 20% a 50%", "Controle de fluxo de caixa e perdas financeiras: melhora de 60%+", "Aumento da ocupação dos barbeiros: 15% a 40%"],
     image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
   },
   {
     id: 2,
-    title: "Plataforma E-commerce B2B",
-    description: "Plataforma completa de e-commerce para distribuidora, com sistema de pedidos automatizado, gestão de estoque inteligente e integração com ERPs.",
-    category: "Desenvolvimento",
-    icon: ShoppingCart,
-    technologies: ["Next.js", "TypeScript", "Prisma", "Stripe", "AWS", "Redis"],
-    results: ["200% aumento em vendas online", "60% redução de erros em pedidos", "NPS de 92"],
-    image: "linear-gradient(135deg, hsl(217 91% 40%) 0%, hsl(217 91% 30%) 100%)"
+    title: "Fluxo de follow-up para e-commerce",
+    description: "Desenvolvimento de fluxo de follow-up para e-commerce, integração com CRM, automação de mensagens personalizadas, análise de comportamento do cliente.",
+    category: "Automação",
+    icon: Bot,
+    technologies: ["n8n", "Redis", "WhatsApp", "JavaScript"],
+    results: ["Aumento de conversão: 15% a 40%", "Redução de carrinhos abandonados: 20% a 50%", "Aumento de engajamento: 25% a 60%", "Melhoria na experiência do cliente: feedback positivo em 80%+", "Aumento de vendas recorrentes: 10% a 30%"],
+    image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
   },
   {
     id: 3,
-    title: "Chatbot Inteligente para RH",
-    description: "Assistente virtual com IA para automatizar processos de RH, incluindo triagem de currículos, agendamento de entrevistas e onboarding de funcionários.",
+    title: "Chatbot de suporte para loja",
+    description: "Desenvolvimento de chatbot de suporte para loja, integração com plataforma de e-commerce, automação de respostas a perguntas frequentes, encaminhamento para atendimento humano.",
     category: "IA",
-    icon: Building2,
-    technologies: ["OpenAI API", "LangChain", "Python", "FastAPI", "React", "MongoDB"],
-    results: ["80% redução no tempo de triagem", "500+ horas/mês economizadas", "95% satisfação dos candidatos"],
-    image: "linear-gradient(135deg, hsl(217 91% 45%) 0%, hsl(217 91% 35%) 100%)"
+    icon: Bot,
+    technologies: ["n8n", "Redis", "WhatsApp", "JavaScript", "IA"],
+    results: ["Redução de tempo de resposta: 50% a 80%", "Aumento de satisfação do cliente: feedback positivo em 85%+", "Redução de carga de trabalho da equipe de suporte: 30% a 60%", "Aumento de vendas cruzadas: 10% a 25%", "Melhoria na experiência do cliente: feedback positivo em 80%+"],
+    image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
   },
   {
     id: 4,
-    title: "Sistema de Gestão Hospitalar",
-    description: "Software completo para gestão hospitalar com agendamento inteligente, prontuário eletrônico, integração com laboratórios e módulo de telemedicina.",
-    category: "Desenvolvimento",
-    icon: HeartPulse,
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker", "HL7 FHIR", "WebRTC"],
-    results: ["35% mais eficiência operacional", "Zero papel em prontuários", "Conformidade LGPD"],
-    image: "linear-gradient(135deg, hsl(217 91% 38%) 0%, hsl(217 91% 28%) 100%)"
-  },
-  {
-    id: 5,
-    title: "Plataforma EAD com IA",
-    description: "Sistema de ensino a distância com trilhas de aprendizado personalizadas por IA, gamificação, aulas ao vivo e analytics avançado de performance.",
-    category: "IA",
-    icon: GraduationCap,
-    technologies: ["Next.js", "Python", "TensorFlow", "WebSocket", "AWS", "Elasticsearch"],
-    results: ["45% maior retenção de alunos", "30% melhoria em notas", "50k+ usuários ativos"],
-    image: "linear-gradient(135deg, hsl(217 91% 42%) 0%, hsl(217 91% 32%) 100%)"
-  },
-  {
-    id: 6,
-    title: "Sistema de Logística Inteligente",
-    description: "Plataforma de otimização de rotas e gestão de frotas com IA, rastreamento em tempo real, previsão de demanda e integração com marketplaces.",
+    title: "Integração Anúncios Meta + CRM",
+    description: "Desenvolvimento de integração entre anúncios da Meta e CRM, automação de processos, análise de desempenho e otimização de campanhas.",
     category: "Automação",
-    icon: Truck,
-    technologies: ["Python", "React Native", "Google Maps API", "Firebase", "Machine Learning"],
-    results: ["30% redução em custos de frete", "20% mais entregas/dia", "98% entregas no prazo"],
-    image: "linear-gradient(135deg, hsl(217 91% 36%) 0%, hsl(217 91% 26%) 100%)"
+    icon: Bot,
+    technologies: ["n8n", "MetaAPI", "WhatsApp", "JavaScript", "IA", "CRM"],
+    results: ["Aumento de conversão: 20% a 50%", "Redução de custo por clique: 25% a 60%", "Aumento de engajamento: 30% a 70%", "Melhoria na experiência do cliente: feedback positivo em 85%+", "Aumento de vendas recorrentes: 15% a 40%"],
+    image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
   }
 ]
 
