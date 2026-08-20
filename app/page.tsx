@@ -441,6 +441,25 @@ export default function Home() {
                 <p className="text-primary font-medium">+55 79 9 9105-4765</p>
               </Card>
             </motion.a>
+
+            <motion.a
+              href="https://www.instagram.com/konnecta.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="block"
+            >
+              <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 group h-full">
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Phone className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-card-foreground mb-2">Instagram</h3>
+                <p className="text-primary font-medium">@konnecta.ai</p>
+              </Card>
+            </motion.a>
           </div>
         </div>
       </section>
