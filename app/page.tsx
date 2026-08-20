@@ -8,6 +8,7 @@ import {
   ArrowRight, 
   Mail, 
   Phone, 
+  Instagram, 
   Sparkles,
   Layers,
   Network,
@@ -19,6 +20,7 @@ import {
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import { ContactFormDialog } from "@/components/contact-form-dialog"
 import { useState } from "react"
 
 const fadeInUp = {
@@ -112,9 +114,11 @@ export default function Home() {
             <a href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">Portfólio</a>
             <a href="#sobre" className="text-muted-foreground hover:text-primary transition-colors">Sobre</a>
             <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors">Contato</a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary">
-              Fale Conosco
-            </Button>
+            <ContactFormDialog>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary">
+                Fale Conosco
+              </Button>
+            </ContactFormDialog>
           </motion.div>
 
           {/* Mobile Menu Button */}
@@ -138,9 +142,11 @@ export default function Home() {
               <a href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfólio</a>
               <a href="#sobre" className="text-muted-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Sobre</a>
               <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contato</a>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
-                Fale Conosco
-              </Button>
+              <ContactFormDialog>
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full">
+                  Fale Conosco
+                </Button>
+              </ContactFormDialog>
             </div>
           </motion.div>
         )}
@@ -183,13 +189,15 @@ export default function Home() {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
             >
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary px-8 py-6 text-lg"
-              >
-                Começar Agora
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <ContactFormDialog>
+                <Button 
+                  size="lg" 
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary px-8 py-6 text-lg"
+                >
+                  Começar Agora
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </ContactFormDialog>
               <Button 
                 size="lg" 
                 variant="outline" 
@@ -352,7 +360,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 relative">
+      <section id="contatocta" className="py-20 relative">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -375,11 +383,13 @@ export default function Home() {
                 Entre em contato conosco e descubra como podemos transformar seu negócio 
                 com soluções inteligentes e personalizadas.
               </p>
-              <Button 
+              <Button
                 size="lg" 
                 className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary px-8 py-6 text-lg"
               >
-                Agendar Reunião
+                <a href="https://wa.me/5579991054765?text=Ol%C3%A1+estou+interessado+em+um+projeto%21+Podemos+agendar+uma+reuni%C3%A3o%3F&utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+                  Agendar Reunião
+                </a>
                 <Zap className="ml-2 w-5 h-5" />
               </Button>
             </div>
@@ -406,7 +416,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <motion.a
               href="mailto:konnecta.ai@gmail.com"
               initial={{ opacity: 0, y: 30 }}
@@ -454,7 +464,7 @@ export default function Home() {
             >
               <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 group h-full">
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-7 h-7 text-primary" />
+                  <Instagram className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-card-foreground mb-2">Instagram</h3>
                 <p className="text-primary font-medium">@konnecta.ai</p>

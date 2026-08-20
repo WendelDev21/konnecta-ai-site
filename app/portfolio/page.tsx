@@ -6,11 +6,11 @@ import {
   ArrowLeft,
   Bot,
   Code2,
-  ShoppingCart,
-  Building2,
-  HeartPulse,
-  GraduationCap,
-  Truck,
+  MessageCircle,
+  Scissors,
+  Workflow,
+  ShoppingBasket,
+  FileSpreadsheet,
   Menu,
   X
 } from "lucide-react"
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Sistema de Gestão de Barbearia",
     description: "Desenvolvimento de sistema completo de gestão de barbearia, gestão de clientes, funcionários, financeiro, dashboard de monitoramento em tempo real.",
     category: "Desenvolvimento",
-    icon: Bot,
+    icon: Scissors,
     technologies: ["Next.js", "React", "TypeScript", "PostgreSQL"],
     results: ["Aumento de faturamento: 10% a 35%", "Redução de faltas/no-show: 30% a 70%", "Aumento de agendamentos recorrentes: 20% a 50%", "Aumento de agendamentos recorrentes: 20% a 50%", "Controle de fluxo de caixa e perdas financeiras: melhora de 60%+", "Aumento da ocupação dos barbeiros: 15% a 40%"],
     image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
@@ -59,7 +59,7 @@ const projects: Project[] = [
     title: "Fluxo de follow-up para e-commerce",
     description: "Desenvolvimento de fluxo de follow-up para e-commerce, integração com CRM, automação de mensagens personalizadas, análise de comportamento do cliente.",
     category: "Automação",
-    icon: Bot,
+    icon: ShoppingBasket,
     technologies: ["n8n", "Redis", "WhatsApp", "JavaScript"],
     results: ["Aumento de conversão: 15% a 40%", "Redução de carrinhos abandonados: 20% a 50%", "Aumento de engajamento: 25% a 60%", "Melhoria na experiência do cliente: feedback positivo em 80%+", "Aumento de vendas recorrentes: 10% a 30%"],
     image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
@@ -79,9 +79,29 @@ const projects: Project[] = [
     title: "Integração Anúncios Meta + CRM",
     description: "Desenvolvimento de integração entre anúncios da Meta e CRM, automação de processos, análise de desempenho e otimização de campanhas.",
     category: "Automação",
-    icon: Bot,
+    icon: Workflow,
     technologies: ["n8n", "MetaAPI", "WhatsApp", "JavaScript", "IA", "CRM"],
     results: ["Aumento de conversão: 20% a 50%", "Redução de custo por clique: 25% a 60%", "Aumento de engajamento: 30% a 70%", "Melhoria na experiência do cliente: feedback positivo em 85%+", "Aumento de vendas recorrentes: 15% a 40%"],
+    image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
+  },
+  {
+    id: 5,
+    title: "Sistema de Campanhas de Marketing no WhatsApp",
+    description: "Desenvolvimento de sistema de campanhas de marketing no WhatsApp, integração com CRM, automação de mensagens personalizadas, análise de desempenho e otimização de campanhas.",
+    category: "Desenvolvimento",
+    icon: MessageCircle,
+    technologies: ["WhatsAppAPI", "TypeScript", "Next.js", "React", "IA", "PostgreSQL"],
+    results: ["Aumento de conversão: 20% a 50%", "Redução de custo por clique: 25% a 60%", "Aumento de engajamento: 30% a 70%", "Melhoria na experiência do cliente: feedback positivo em 85%+", "Aumento de vendas recorrentes: 15% a 40%"],
+    image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
+  },
+  {
+    id: 6,
+    title: "Automação de planilhas e relatórios",
+    description: "Desenvolvimento de soluções para automação de planilhas e relatórios, otimização de processos e análise de dados.",
+    category: "Automação",
+    icon: FileSpreadsheet,
+    technologies: ["n8n", "microsoft365","Google Sheets", "IA", "CRM", "Site"],
+    results: ["Redução de tempo gasto em tarefas manuais: 50% a 80%", "Aumento de precisão e consistência dos dados: 90%+", "Melhoria na tomada de decisão: insights mais rápidos e precisos", "Aumento de produtividade da equipe: 20% a 50%", "Redução de erros humanos: 30% a 70%"],
     image: "linear-gradient(135deg, hsl(217 91% 35%) 0%, hsl(217 91% 25%) 100%)"
   }
 ]
@@ -336,7 +356,7 @@ export default function Portfolio() {
                 className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary px-8 py-6 text-lg"
                 asChild
               >
-                <a href="/#contato">
+                <a href="/#contatocta">
                   Iniciar Projeto
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
